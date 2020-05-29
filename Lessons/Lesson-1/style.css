@@ -1,0 +1,49 @@
+*{
+  border: 1px dotted black;
+}
+
+h1{
+font-size: 8em;
+text-align: center;
+color: blue;
+}
+
+h2{
+font-size: 3em;
+text-align: center;
+color: red;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > * {
+  margin: 0.25em;
+}
+
+body {
+  height: 100vh;
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw; 
+  font-family: "Open Sans";
+}
+
+main{
+  font-size: 2em;
+  color: green;
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+main > p {
+  padding: 0.25em;
+  text-align: justify;
+}
