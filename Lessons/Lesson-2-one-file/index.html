@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Lesson 2 </title>
+  </head>
+  <style>
+    h1{
+    font-size: 15vh;
+    text-align: center;
+    color: blue;
+    }
+
+    h2{
+    font-size: 5vh;
+    text-align: center;
+    color: red;
+    }
+
+    body {
+      height: 100vh;
+      background-color:black;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+
+    .click-count{
+      color: green;
+    }
+
+    .content{
+      text-align: center;
+    }
+
+    input, label{
+      height: 5vh;
+    }
+
+    input, label, button{
+      font-size: 5vh;
+      width: 10vw;
+      text-align: center;
+      padding: 2vh 2vw 2vh 2vw;
+      margin: 2vh 2vw 2vh 2vw
+    }
+  </style>
+
+  <body>
+
+    <header>
+      <h1>Lesson 2: Interactivity</h1>
+      <h2> This is a basic sub-heading </h2>
+    </header>
+
+    <main class="content">
+      <label class="click-count"> Clicks: </label>
+      <input value="0" type="text"/>
+      <button> + </button>
+    </main>
+
+    <footer> This is the footer </footer>
+
+    <script>
+      console.log("Hello World!");
+      console.log("E=mc2");
+
+      let h = document.querySelector("h2");
+      let el = document.querySelector("input");
+
+      h.innerHTML = "This is my altered subheading";
+
+      let b = document.querySelector("button");
+
+      b.addEventListener("click", () => {
+      	console.log("The button was clicked!");
+      	el.value = parseInt(el.value) + 1;
+      });
+    </script>
+  </body>
+</html>
